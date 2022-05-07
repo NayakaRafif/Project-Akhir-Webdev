@@ -1,0 +1,688 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.layar{
+    width: 1000px;
+    margin:auto;
+}
+.full-screen {
+    width: 100%;
+}
+nav {
+    z-index: 100;
+    color:gray;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #aaa;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav.putih{
+    background-color: #fff;
+}
+
+nav .logo{
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+    left: 10%;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 120px;
+
+}
+
+nav .menu {
+    margin-top: 30px;
+    float: right;
+    height: 60px;
+    max-width: 600px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    right: 10%;
+}
+
+nav ul li a:hover {
+    color:black;
+    background-color: white;
+}
+nav .menu ul li a:hover {
+    color: white;
+    background-color: gray;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header video {
+    position:absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+header .intro {
+    z-index: 100;
+    color:yellowgreen;
+    text-align: center;
+    position: relative;
+    top: 70%;
+}
+header .intro h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+.Button {
+    background-color: purple;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    height: 45px;
+    line-height: 42px;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+}
+.Button:hover{
+    color:aqua;
+}
+header .overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 60%;
+}
+.hamburger {
+    position:absolute;
+    top: 3rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.hamburger .garis {
+    height: 3px;
+    width: 28px;
+    background-color: white;
+}
+article {
+    padding: 50px 0px 50px 0px;
+}
+article h3 {
+    font-size: 30px;
+}
+article h3::after {
+    content: "";
+    border-bottom: 5px solid #bbb;
+    width: 52px;
+    display: block;
+    margin: 10px auto;
+}
+#about {
+    text-align: center;
+}
+article p.ringkasan {
+    margin-top: 85%;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+}
+article p.ringkasan em{
+    font-size: 18px;
+}
+article p.konten-isi {
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+}
+article p.penjelasan {
+    text-align: left;
+}
+nav.putih{
+    background-color: white;
+}
+nav.putih .hamburger .garis {
+    background-color: gray;
+}
+nav.putih ul li a {
+    color:black;
+}
+#list {
+    text-align: center;
+}
+article h4.hero {
+    margin-top: 5%;
+    color:black;
+    text-align: left;
+    font-size: 20px;
+    
+}
+article p.hero {
+    margin-top: 60%;
+    text-align: justify;
+    font-size: 20px;
+}
+article p.hero em {
+    font-size: 20px;
+}
+article h4.hero2 {
+    margin-top: 5%;
+    color:black;
+    text-align: left;
+    font-size: 20px;
+    
+}
+article p.hero2 {
+    margin-top: 70%;
+    text-align: justify;
+    font-size: 20px;
+}
+article p.hero2 em {
+    font-size: 20px;
+}
+article h4.hero3 {
+    margin-top: 5%;
+    color:black;
+    text-align: left;
+    font-size: 20px;
+    
+}
+article p.hero3 {
+    margin-top: 65%;
+    text-align: justify;
+    font-size: 20px;
+}
+article p.hero3 em {
+    font-size: 20px;
+}
+article h4.hero4 {
+    margin-top: 5%;
+    color:black;
+    text-align: left;
+    font-size: 20px;
+    
+}
+article p.hero4 {
+    margin-top: 60%;
+    text-align: justify;
+    font-size: 20px;
+}
+article p.hero4 em {
+    font-size: 20px;
+}
+article h4.hero5 {
+    margin-top: 5%;
+    color:black;
+    text-align: left;
+    font-size: 20px;
+    
+}
+article p.hero5 {
+    margin-top: 60%;
+    text-align: justify;
+    font-size: 20px;
+}
+article p.hero5 em {
+    font-size: 20px;
+}
+.box {
+    position:relative;
+}
+
+.box img {
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    border-top: 1px solid #aaa;
+    text-align: center;
+}
+.gambar {
+    font-size: 15px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+@media screen and (max-width: 1084px) {
+    .layar {
+        width: 80%;
+    }
+    header {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+    }
+    header video {
+        position:absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -2;
+        width: 100%;
+        height: 130vh;
+    }
+    nav .menu {
+        margin-top: 30px;
+        float: right;
+        height: 60px;
+        max-width: 600px;
+        font-family: 'Anton', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    nav .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav .menu ul li {
+        list-style-type: none;
+        float: left;
+        line-height: 60px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-align: center;
+        padding: 0px 16px 0px 16px;
+        text-decoration: none;
+        right: 10%;
+    }
+    
+    nav ul li a:hover {
+        color:black;
+        background-color: white;
+    }
+    article p.ringkasan {
+
+        font-style: normal;
+        font-size: 20px;
+        color: black;
+        text-align: justify;
+    }
+    article p.ringkasan em{
+        font-size: 20px;
+    }
+    article p.konten-isi {
+        font-style: normal;
+        font-size: 20px;
+        text-align: justify;
+    }
+    article p.penjelasan {
+        text-align: justify;
+        font-size: 20px;
+    }
+    article p.penjelasan em {
+        font-size: 20px;
+    }
+    .gambar {
+        font-size: 20px;
+        border-bottom: 0%;
+        font-style: italic;
+    }
+}
+
+@media screen and (max-width: 798px) {
+    .layar {
+        width: 60%;
+    }
+    header {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        height: 100vh;
+    }
+    header video {
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -2;
+        width: 100%;
+        height: 120vh;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 70px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #aaa;
+        background-color: white;
+        line-height: 40px;
+    }
+    nav .menu ul li a {
+        color: black;
+    }
+    .hamburger {
+        display: flex;
+    }
+    article p.ringkasan {
+        font-style: normal;
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+    }
+    article p.ringkasan em{
+        font-size: 18px;
+    }
+    article p.konten-isi {
+        font-style: normal;
+        font-size: 18px;
+        text-align: justify;
+    }
+    article p.penjelasan {
+        text-align: justify;
+        font-size: 18px;
+    }
+    article p.penjelasan em {
+        font-size: 18px;
+    }
+    article h4.hero {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 18px;
+        
+    }
+    article p.hero {
+        margin-top: 60%;
+        text-align: justify;
+        font-size: 18px;
+    }
+    article p.hero em {
+        font-size: 18px;
+    }
+    article h4.hero2 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 18px;
+        
+    }
+    article p.hero2 {
+        margin-top: 70%;
+        text-align: justify;
+        font-size: 18px;
+    }
+    article p.hero2 em {
+        font-size: 18px;
+    }
+    article h4.hero3 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 18px;
+        
+    }
+    article p.hero3 {
+        margin-top: 65%;
+        text-align: justify;
+        font-size: 18px;
+    }
+    article p.hero3 em {
+        font-size: 18px;
+    }
+    article h4.hero4 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 18px;
+        
+    }
+    article p.hero4 {
+        margin-top: 60%;
+        text-align: justify;
+        font-size: 18px;
+    }
+    article p.hero4 em {
+        font-size: 18px;
+    }
+    article h4.hero5 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 18px;
+        
+    }
+    article p.hero5 {
+        margin-top: 60%;
+        text-align: justify;
+        font-size: 18px;
+    }
+    article p.hero5 em {
+        font-size: 18px;
+    }
+    .gambar {
+        font-size: 15px;
+        border-bottom: 0%;
+        font-style: italic;
+    }
+@media screen and (max-width: 360px) {
+    .layar {
+        width: 50%;
+    }
+    header {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+    }
+    header video {
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -2;
+        width: 100%;
+        height: 110vh;
+
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 70px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #aaa;
+        background-color: white;
+        line-height: 35px;
+    }
+    nav .menu ul li a {
+        color: black;
+    }
+    .hamburger {
+        display: flex;
+    }
+    #about {
+        text-align: center;
+    }
+    article p.ringkasan {
+        font-style: normal;
+        font-size: 15px;
+        color: black;
+        text-align: justify;
+    }
+    article p.ringkasan em{
+        font-size: 15px;
+    }
+    article p.konten-isi {
+        font-style: normal;
+        font-size: 15px;
+        text-align: justify;
+    }
+    article p.penjelasan {
+        text-align: justify;
+    }
+    article h3 {
+        font-size: 20px;
+    }
+    article h4.hero {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 10px;
+        
+    }
+    article p.hero {
+        margin-top: 60%;
+        text-align: justify;
+        font-size: 10px;
+    }
+    article p.hero em {
+        font-size: 10px;
+    }
+    article h4.hero2 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 10px;
+        
+    }
+    article p.hero2 {
+        margin-top: 70%;
+        text-align: justify;
+        font-size: 10px;
+    }
+    article p.hero2 em {
+        font-size: 10px;
+    }
+    article h4.hero3 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 10px;
+        
+    }
+    article p.hero3 {
+        margin-top: 65%;
+        text-align: justify;
+        font-size: 10px;
+    }
+    article p.hero3 em {
+        font-size: 10px;
+    }
+    article h4.hero4 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 10px;
+        
+    }
+    article p.hero4 {
+        margin-top: 60%;
+        text-align: justify;
+        font-size: 10px;
+    }
+    article p.hero4 em {
+        font-size: 10px;
+    }
+    article h4.hero5 {
+        margin-top: 5%;
+        color:black;
+        text-align: left;
+        font-size: 10px;
+        
+    }
+    article p.hero5 {
+        margin-top: 60%;
+        text-align: justify;
+        font-size: 10px;
+    }
+    article p.hero5 em {
+        font-size: 10px;
+    }
+    article p.ringkasan {
+        margin-top: 100%;
+        font-style: normal;
+        font-size: 10px;
+        color: black;
+        text-align: justify;
+    }
+    article p.ringkasan em{
+        font-size: 10px;
+    }
+    article p.konten-isi {
+        font-style: normal;
+        font-size: 10px;
+        text-align: justify;
+    }
+    article p.penjelasan {
+        text-align: justify;
+        font-size: 10px;
+    }
+    article p.penjelasan em {
+        font-size: 10px;
+    }
+    .gambar {
+        font-size: 9px;
+        border-bottom: 0%;
+        font-style: italic;
+    }
+}
+}
